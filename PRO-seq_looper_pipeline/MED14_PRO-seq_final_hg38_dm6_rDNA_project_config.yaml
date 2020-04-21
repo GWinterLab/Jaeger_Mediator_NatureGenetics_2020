@@ -1,0 +1,31 @@
+project_name: MJ-19-14_and_MJ-17-76_MED14_PRO-seq
+project_description: PROseq_MED14-dTAG_1h_2h_6h_2hdCDK9_samples_to_hg38-dm6-rDNA
+username: mjaeger
+email: mjaeger@cemm.oeaw.ac.at
+metadata:
+    output_dir: /scratch/lab_winter/martin/MED14_PRO-seq_final/
+    results_subdir: results
+    submission_subdir: submission
+    pipeline_interfaces: /data/groups/lab_winter/pipelines/pipeline_interface.yaml
+    sample_annotation: /scratch/lab_winter/martin/MED14_PRO-seq_final/metadata/MED14_PRO-seq_final_hg38_dm6_rDNA_sample_annotation.csv
+    sample_subannotation: /scratch/lab_winter/martin/MED14_PRO-seq_final/metadata/MED14_PRO-seq_final_hg38_dm6_rDNA_sample_subannotation.csv
+
+derived_columns: [data_source]
+data_sources:
+   minitest: /data/groups/lab_winter/pipelines/minitest/PROseq/MYC_dm6_minitest.bam
+   debug: /scratch/lab_winter/martin/PROseq_pypiper_test/{flowcell}_{lane}#{BSF_name}.bam
+   bsf: /scratch/lab_bsf/samples/{flowcell}/{flowcell}_{lane}_samples/{flowcell}_{lane}#{BSF_name}.bam
+#genomes:
+#    human: hg19
+#    mouse: mm10
+#transcriptomes:
+#    human: hg19_cdna
+#    mouse: mm10_cdna
+#pipeline_config:
+#    atacseq: null
+#compute:
+#    submission_template: slurm_template.sub
+#    submission_command: sbatch
+#trackhubs:
+#    trackhub_dir: /scratch/lab_winter/martin/MJ-18-31/trackhub
+#    url: #http://biomedical-sequencing.at/bocklab/arendeiro/cll-hichip

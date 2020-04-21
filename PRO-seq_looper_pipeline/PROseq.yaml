@@ -1,0 +1,45 @@
+tools:
+   # absolute paths to required tools
+   bamtools: bamtools
+   cutadapt: cutadapt
+   fastx_reverse_complement: /cm/shared/apps/fastx/0.0.14/bin/fastx_reverse_complement
+   bowtie2: bowtie2
+   samtools: samtools
+   bedtools: bedtools
+   java: java
+   picard: /cm/shared/apps/picard-tools/1.140/picard.jar
+
+resources:
+   # paths to reference genomes, adapter files, and other required shared data
+   genomes:
+      hg38_dm6: /data/groups/lab_winter/reference_files/indices/bowtie_2-2-9/index/concatenated_hg38_dm6_prefix/concatenated_hg38_dm6_prefix
+      hg19_dm6: /data/groups/lab_winter/reference_files/indices/bowtie_2-2-9/index/concatenated_hg19_dm6_prefix/concatenated_hg19_dm6_prefix
+      hg38_dm6_rDNA: /data/groups/lab_winter/reference_files/indices/bowtie_2-2-9/index/concatenated_hg38_dm6_prefix_rDNA_U13369/concatenated_hg38_dm6_prefix_rDNA_U13369
+      hg19_dm6_rDNA: /data/groups/lab_winter/reference_files/indices/bowtie_2-2-9/index/concatenated_hg19_dm6_prefix_rDNA_U13369/concatenated_hg19_dm6_prefix_rDNA_U13369
+      hg19: /data/groups/lab_winter/reference_files/indices/bowtie_2-2-9/index/hg19/hg19
+      hg38: /data/groups/lab_winter/reference_files/indices/bowtie_2-2-9/index/hg38/hg38
+   chrom_sizes:
+      hg38_dm6:  /data/groups/lab_winter/reference_files/genomes/concatenated_hg38_dm6_prefix.chrom.sizes
+      hg19_dm6:  /data/groups/lab_winter/reference_files/genomes/concatenated_hg19_dm6_prefix.chrom.sizes
+      hg38_dm6_rDNA: /data/groups/lab_winter/reference_files/genomes/concatenated_hg38_dm6_prefix_rDNA_U13369.chrom.sizes
+      hg19_dm6_rDNA: /data/groups/lab_winter/reference_files/genomes/concatenated_hg19_dm6_prefix_rDNA_U13369.chrom.sizes
+      hg38:  /data/groups/lab_winter/reference_files/genomes/hg38.chrom.sizes
+      hg19:  /data/groups/lab_winter/reference_files/genomes/hg19.chrom.sizes
+      dm6:  /data/groups/lab_winter/reference_files/genomes/dm6_prefix.chrom.sizes
+   #adapters: /data/groups/lab_bock/shared/resources/adapters/
+
+parameters:
+   # parameters passed to bioinformatic tools, subclassed by tool
+   cutadapt:
+      adapters:
+         PROseq: "TGGAATTCTCGGGTGCCAAGG"
+      min_length: "10"
+   bowtie2:
+      min_MAPQ: "20"
+   genome_annotations:
+      refGene:
+         full_length: /data/groups/lab_winter/reference_files/RefSeq/hg38_UCSC_full_length.bed
+         genebody: /data/groups/lab_winter/reference_files/RefSeq/hg38_UCSC_genebody.bed
+         TSS: /data/groups/lab_winter/reference_files/RefSeq/hg38_UCSC_TSS+250.bed
+         TTS: /data/groups/lab_winter/reference_files/RefSeq/hg38_UCSC_TTS+2500.bed
+   defaultposition: "chr8:127,734,250-127,747,317" # MYC

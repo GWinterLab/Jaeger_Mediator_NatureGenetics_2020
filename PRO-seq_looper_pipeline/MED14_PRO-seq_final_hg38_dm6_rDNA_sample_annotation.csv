@@ -1,0 +1,25 @@
+toggle;sample_name;cell_line;compound;concentration_nM;treatment_time_hours;protocol;flowcell;lane;BSF_name;data_source;genome;spike_in;rDNA;annotation;keep_spike_ins
+0;MJ-19-14_DMSO_1h_A;C364;DMSO;0 nM;1;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-14_DMSO_1h_B;C364;DMSO;0 nM;1;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-14_dTAG7_1h_A;C364;dTAG7;500 nM;1;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-14_dTAG7_1h_B;C364;dTAG7;500 nM;1;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-14_DMSO_1h_merged;C364;DMSO;0 nM;1;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-14_dTAG7_1h_merged;C364;dTAG7;500 nM;1;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-17-76_DMSO_2h_A;C364;DMSO;0 nM;2;PROseq;BSF_0394_HN7F7BBXX;4;MJ_17_76_MED14_DMSO_A_S32542;bsf;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-17-76_DMSO_2h_B;C364;DMSO;0 nM;2;PROseq;BSF_0394_HN7F7BBXX;4;MJ_17_76_MED14_DMSO_B_S32543;bsf;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-17-76_dTAG7_2h_A;C364;dTAG7;500 nM;2;PROseq;BSF_0394_HN7F7BBXX;4;MJ_17_76_MED14_2h_dTAG7_A_S32544;bsf;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-17-76_dTAG7_2h_B;C364;dTAG7;500 nM;2;PROseq;BSF_0394_HN7F7BBXX;4;MJ_17_76_MED14_2h_dTAG7_B_S32545;bsf;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-17-76_DMSO_2h_merged;C364;DMSO;0 nM;2;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-17-76_dTAG7_2h_merged;C364;dTAG7;500 nM;2;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-30_DMSO_2h_A;C364;DMSO;0 nM;2;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-30_DMSO_2h_B;C364;DMSO;0 nM;2;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-30_NVP2_30min_A;C364;NVP2;500 nM;0.5;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-30_NVP2_30min_B;C364;NVP2;500 nM;0.5;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-30_dTAG7_2h_A;C364;dTAG7;500 nM;2;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-30_dTAG7_2h_B;C364;dTAG7;500 nM;2;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-30_dTAG7_NPV2_combo_A;C364;dTAG7_NVP2;500_500 nM;2;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-30_dTAG7_NPV2_combo_B;C364;dTAG7_NVP2;500_500 nM;2;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+1;MJ-19-30_DMSO_2h_merged;C364;DMSO;0 nM;2;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+1;MJ-19-30_NVP2_30min_merged;C364;NVP2;500 nM;0.5;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-30_dTAG7_2h_merged;C364;dTAG7;500 nM;2;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
+0;MJ-19-30_dTAG7_NPV2_combo_merged;C364;dTAG7_NVP2;500_500 nM;2;PROseq;;;;;hg38;dm6;TRUE;refGene;TRUE
